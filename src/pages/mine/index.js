@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 
 import { MineWrapper } from './style';
 
-export default memo(function HYMine() {
+export default memo(function LDMine() {
   return (
     <MineWrapper>
       <div className="content wrap-v2">

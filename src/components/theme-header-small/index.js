@@ -5,7 +5,7 @@ import {
   HeaderWrapper
 } from "./style";
 
-const HYThemeHeaderSmall = memo(function (props) {
+const LDThemeHeaderSmall = memo(function (props) {
   const { title, more } = props;
 
   return (
@@ -16,13 +16,13 @@ const HYThemeHeaderSmall = memo(function (props) {
   )
 })
 
-HYThemeHeaderSmall.defaultProps = {
+LDThemeHeaderSmall.defaultProps = {
 
 }
 
-HYThemeHeaderSmall.propTypes = {
+LDThemeHeaderSmall.propTypes = {
   title: PropTypes.string.isRequired,
   more: PropTypes.string
 }
 
-export default HYThemeHeaderSmall;
+export default LDThemeHeaderSmall;

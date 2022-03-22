@@ -8,13 +8,13 @@ import {
   changeCurrentCategoryAction
 } from "./store/actionCreators";
 
-import HYSongsHeader from "./c-cpns/songs-header";
-import HYSongsList from './c-cpns/songs-list';
+import LDSongsHeader from "./c-cpns/songs-header";
+import LDSongsList from './c-cpns/songs-list';
 import {
   SongsWrapper
 } from "./style"
 
-export default memo(function HYSongs() {
+export default memo(function LDSongs() {
   // redux
   const dispatch = useDispatch();
   const cat = useLocation().cat;
@@ -31,8 +31,8 @@ export default memo(function HYSongs() {
 
   return (
     <SongsWrapper className="wrap-v2">
-      <HYSongsHeader/>
-      <HYSongsList/>
+      <LDSongsHeader/>
+      <LDSongsList/>
     </SongsWrapper>
   )
 })

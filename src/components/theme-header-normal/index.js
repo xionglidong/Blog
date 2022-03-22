@@ -4,7 +4,7 @@ import {
   HeaderWrapper
 } from "./style";
 
-export default memo(function HYThemeHeaderNormal(props) {
+export default memo(function LDThemeHeaderNormal(props) {
   const { title, rightSlot } = props;
 
   return (

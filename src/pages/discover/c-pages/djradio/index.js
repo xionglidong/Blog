@@ -1,18 +1,18 @@
 import React, { memo } from 'react';
 
-import HYRadioCategory from './c-cpns/radio-category';
-import HYRadioRecommend from './c-cpns/radio-recommend';
-import HYRadioRanking from './c-cpns/radio-ranking';
+import LDRadioCategory from './c-cpns/radio-category';
+import LDRadioRecommend from './c-cpns/radio-recommend';
+import LDRadioRanking from './c-cpns/radio-ranking';
 import {
   DjRadioWrapper
 } from "./style";
 
-export default memo(function HYDjradio() {
+export default memo(function LDDjradio() {
   return (
     <DjRadioWrapper className="wrap-v2">
-      <HYRadioCategory />
-      <HYRadioRecommend />
-      <HYRadioRanking />
+      <LDRadioCategory />
+      <LDRadioRecommend />
+      <LDRadioRanking />
     </DjRadioWrapper>
   )
 })

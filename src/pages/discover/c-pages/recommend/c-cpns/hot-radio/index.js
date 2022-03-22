@@ -4,15 +4,15 @@ import {
   hotRadios
 } from "@/services/local-data";
 
-import HYThemeHeaderSmall from '@/components/theme-header-small';
+import LDThemeHeaderSmall from '@/components/theme-header-small';
 import {
   HotRadioWrapper
 } from './style';
 
-export default memo(function HYHotRadio() {
+export default memo(function LDHotRadio() {
   return (
     <HotRadioWrapper>
-      <HYThemeHeaderSmall title="热门主播" />
+      <LDThemeHeaderSmall title="热门主播" />
       <div className="radio-list">
         {
           hotRadios.map((item, index) => {

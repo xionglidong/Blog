@@ -11,7 +11,7 @@ import {
   changePlaySongAction 
 } from '../store/actionCreators';
 
-import HYAppPlayPanel from '../app-play-panel'
+import LDAppPlayPanel from '../app-play-panel'
 import { NavLink } from 'react-router-dom';
 import { Slider } from 'antd';
 import {
@@ -21,7 +21,7 @@ import {
   Operator
 } from './style';
 
-export default memo(function HYAppPlaybar() {
+export default memo(function LDAppPlaybar() {
   // props and state
   const [isPlaying, setIsPlaying] = useState(false);
   const [duration, setDuration] = useState(0);
@@ -172,7 +172,7 @@ export default memo(function HYAppPlaybar() {
         </Operator>
       </div>
       <audio ref={audioRef} onTimeUpdate={timeUpdate} onEnded={timeEnded}/>
-      {showPanel && <HYAppPlayPanel />}
+      {showPanel && <LDAppPlayPanel />}
     </PlaybarWrapper>
   )
 })

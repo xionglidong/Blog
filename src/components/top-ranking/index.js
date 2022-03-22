@@ -6,7 +6,7 @@ import { getSongDetailAction } from '@/pages/player/store';
 
 import { TopRankingWrapper } from './style';
 
-export default memo(function HYTopRanking(props) {
+export default memo(function LDTopRanking(props) {
   // props and state
   const { info } = props;
   const { tracks = [] } = info;

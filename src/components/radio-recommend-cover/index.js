@@ -6,7 +6,7 @@ import {
   CoverWrapper
 } from "./style";
 
-export default memo(function HYRadioRecommendCover(props) {
+export default memo(function LDRadioRecommendCover(props) {
   const { info } = props;
 
   return (

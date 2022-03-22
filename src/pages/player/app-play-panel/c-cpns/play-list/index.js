@@ -6,7 +6,7 @@ import { formatMinuteSecond } from '@/utils/format-utils';
 
 import { PlayListWrapper } from './style';
 
-export default memo(function HYPlayList() {
+export default memo(function LDPlayList() {
   const { playList, currentSongIndex } = useSelector(state => ({
     playList: state.getIn(["player", "playList"]),
     currentSongIndex: state.getIn(["player", "currentSongIndex"])

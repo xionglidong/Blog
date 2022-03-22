@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 
-export default memo(function HYPlayerComment() {
+export default memo(function LDPlayerComment() {
   return (
     <div>
       

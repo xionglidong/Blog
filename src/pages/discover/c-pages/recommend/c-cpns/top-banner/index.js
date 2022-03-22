@@ -13,7 +13,7 @@ import {
   BannerControl
 } from './style';
 
-export default memo(function HYTopBanner() {
+export default memo(function LDTopBanner() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const dispatch = useDispatch();

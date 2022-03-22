@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 
 import { HeaderWrapper } from './style';
 
-export default memo(function HYThemeHeaderPlayer(props) {
+export default memo(function LDThemeHeaderPlayer(props) {
   const { title } = props;
 
   return (

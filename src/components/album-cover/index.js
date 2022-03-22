@@ -9,7 +9,7 @@ import {
 } from "./style";
 
 
-export default memo(function HYAlbumCover(props) {
+export default memo(function LDAlbumCover(props) {
   const { info, size = "100px", width = "118px", bgp = "-570px" } = props;
 
   return (

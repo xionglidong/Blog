@@ -10,10 +10,10 @@ import {
   RecommendWrapper
 } from "./style";
 
-import HYThemeHeaderRCM from '@/components/theme-header-rcm';
-import HYThemeCover from '@/components/theme-cover';
+import LDThemeHeaderRCM from '@/components/theme-header-rcm';
+import LDThemeCover from '@/components/theme-cover';
 
-export default memo(function HYHotRecommend() {
+export default memo(function LDHotRecommend() {
   // redux
   const state = useSelector(state => ({
     recommends: state.getIn(["recommend", "hotRecommends"])
@@ -31,7 +31,7 @@ export default memo(function HYHotRecommend() {
 
   return (
     <RecommendWrapper>
-      <HYThemeHeaderRCM title="热门推荐" 
+      <LDThemeHeaderRCM title="热门推荐" 
                         keywords={["华语", "流行", "摇滚", "民谣", "电子"]}
                         moreLink="/discover/songs"
                         keywordClick={keywordClick}/>
@@ -39,7 +39,7 @@ export default memo(function HYHotRecommend() {
         {
           state.recommends.slice(0, 8).map((item, index) => {
             return (
-              <HYThemeCover info={item} key={item.id}/>
+              <LDThemeCover info={item} key={item.id}/>
             )
           })
         }

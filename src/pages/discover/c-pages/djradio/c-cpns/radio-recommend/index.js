@@ -5,13 +5,13 @@ import {
   getRadioRecommend
 } from "../../store/actionCreators";
 
-import HYThemeHeaderNormal from '@/components/theme-header-normal';
-import HYRadioRecomendCover from '@/components/radio-recommend-cover';
+import LDThemeHeaderNormal from '@/components/theme-header-normal';
+import LDRadioRecomendCover from '@/components/radio-recommend-cover';
 import {
   RecommendWrapper
 } from "./style";
 
-export default memo(function HYRadioRecommend() {
+export default memo(function LDRadioRecommend() {
   // redux
   const { currentId, recommends } = useSelector(state => ({
     currentId: state.getIn(["djradio", "currentId"]),
@@ -27,11 +27,11 @@ export default memo(function HYRadioRecommend() {
 
   return (
     <RecommendWrapper>
-      <HYThemeHeaderNormal title="优秀新电台" />
+      <LDThemeHeaderNormal title="优秀新电台" />
       <div className="radio-list">
         {
           recommends.slice(0, 5).map((item) => {
-            return (<HYRadioRecomendCover info={item} key={item.id}/>)
+            return (<LDRadioRecomendCover info={item} key={item.id}/>)
           })
         }
       </div>

@@ -13,7 +13,7 @@ import {
   HeaderRight
 } from "./style";
 
-export default memo(function HYAppHeader() {
+export default memo(function LDAppHeader() {
 
   const showItem = (item, index) => {
     if (index < 3) {

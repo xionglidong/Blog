@@ -5,13 +5,13 @@ import {
   getTopData
 } from "../../store/actionCreators";
 
-import HYThemeHeaderRCM from '@/components/theme-header-rcm';
-import HYTopRanking from "@/components/top-ranking";
+import LDThemeHeaderRCM from '@/components/theme-header-rcm';
+import LDTopRanking from "@/components/top-ranking";
 import {
   RankingWrapper
 } from "./style";
 
-export default memo(function HYRankingList() {
+export default memo(function LDRankingList() {
   // redux
   const dispatch = useDispatch();
   const state = useSelector((state) => ({
@@ -29,11 +29,11 @@ export default memo(function HYRankingList() {
 
   return (
     <RankingWrapper>
-      <HYThemeHeaderRCM title="榜单" moreLink="/discover/ranking"/>
+      <LDThemeHeaderRCM title="榜单" moreLink="/discover/ranking"/>
       <div className="tops">
-        <HYTopRanking info={state.topUpList}/>
-        <HYTopRanking info={state.topNewList}/>
-        <HYTopRanking info={state.topOriginList}/>
+        <LDTopRanking info={state.topUpList}/>
+        <LDTopRanking info={state.topNewList}/>
+        <LDTopRanking info={state.topOriginList}/>
       </div>
     </RankingWrapper>
   )

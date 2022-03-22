@@ -11,7 +11,7 @@ import {
   TopMenu
 } from "./style";
 
-export default memo(function HYDiscover(props) {
+export default memo(function LDDiscover(props) {
   const { route } = props;
 
   return (

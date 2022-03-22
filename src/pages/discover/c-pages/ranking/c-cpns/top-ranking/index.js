@@ -12,7 +12,7 @@ import {
   TopRankingWrapper
 } from "./style";
 
-export default memo(function HYTopRanking() {
+export default memo(function LDTopRanking() {
   // redux
   const state = useSelector(state => ({
     topList: state.getIn(["ranking", "topList"]),

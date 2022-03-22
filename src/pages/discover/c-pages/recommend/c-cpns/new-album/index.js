@@ -6,13 +6,13 @@ import {
 } from "../../store/actionCreators";
 
 import { Carousel } from 'antd';
-import HYThemeHeaderRCM from '@/components/theme-header-rcm';
-import HYAlbumCover from "@/components/album-cover";
+import LDThemeHeaderRCM from '@/components/theme-header-rcm';
+import LDAlbumCover from "@/components/album-cover";
 import {
   AlbumWrapper
 } from "./style";
 
-export default memo(function HYNewAlbum(props) {
+export default memo(function LDNewAlbum(props) {
   // redux
   const state = useSelector(state => ({
     newAlbum: state.getIn(["recommend", "newAlbum"])
@@ -27,7 +27,7 @@ export default memo(function HYNewAlbum(props) {
 
   return (
     <AlbumWrapper>
-      <HYThemeHeaderRCM title="新碟上架" moreLink="/discover/album"/>
+      <LDThemeHeaderRCM title="新碟上架" moreLink="/discover/album"/>
       <div className="content">
         <div className="arrow arrow-left sprite_02" 
             onClick={e => carouselRef.current.prev()}></div>
@@ -40,7 +40,7 @@ export default memo(function HYNewAlbum(props) {
                     {
                       state.newAlbum.slice(item*5, (item+1)*5).map(item => {
                         return (
-                          <HYAlbumCover key={item.id} info={item}/>
+                          <LDAlbumCover key={item.id} info={item}/>
                         )
                       })
                     }

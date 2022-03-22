@@ -7,7 +7,7 @@ import { artistCategories } from '@/services/local-data';
 import { CategoryWrapper, CategoryItem } from './style';
 import { changeCurrentAreaAction, changeCurrentTypeAction } from '../../store/actionCreators';
 
-export default memo(function HYArtistCategory(props) {
+export default memo(function LDArtistCategory(props) {
 
   // redux hooks
   const {currentArea, currentType} = useSelector(state => ({

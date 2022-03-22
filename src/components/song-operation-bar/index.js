@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 
 import { OperationBarWrapper } from './style';
 
-export default memo(function HYSongOperationBar(props) {
+export default memo(function LDSongOperationBar(props) {
   const { favorTitle, shareTitle, downloadTitle, commentTitle } = props;
 
   return (

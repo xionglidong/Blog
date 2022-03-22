@@ -6,12 +6,12 @@ import {
   formatMinuteSecond
 } from "@/utils/format-utils.js"
 
-import HYThemeHeaderSong from '@/components/theme-header-song';
+import LDThemeHeaderSong from '@/components/theme-header-song';
 import {
   RankingListWrapper
 } from './style';
 
-export default memo(function HYRankingList() {
+export default memo(function LDRankingList() {
   const state = useSelector(state => ({
     playList: state.getIn(["ranking", "playList"])
   }), shallowEqual);
@@ -19,7 +19,7 @@ export default memo(function HYRankingList() {
 
   return (
     <RankingListWrapper>
-      <HYThemeHeaderSong />
+      <LDThemeHeaderSong />
       <div className="play-list">
         <table>
           <thead>

@@ -1,12 +1,12 @@
 import React, { memo } from 'react';
 
-import HYTopBanner from './c-cpns/top-banner';
-import HYHotRecommend from './c-cpns/hot-recommend';
-import HYNewAlbum from './c-cpns/new-album';
-import HYRankingList from './c-cpns/ranking-list';
-import HYUserLogin from './c-cpns/user-login';
-import HYSettleSinger from './c-cpns/settle-singer';
-import HYHotRadio from './c-cpns/hot-radio';
+import LDTopBanner from './c-cpns/top-banner';
+import LDHotRecommend from './c-cpns/hot-recommend';
+import LDNewAlbum from './c-cpns/new-album';
+import LDRankingList from './c-cpns/ranking-list';
+import LDUserLogin from './c-cpns/user-login';
+import LDSettleSinger from './c-cpns/settle-singer';
+import LDHotRadio from './c-cpns/hot-radio';
 import {
   RecommendWraper,
   Content,
@@ -14,20 +14,20 @@ import {
   RecommendRight
 } from "./style";
 
-export default memo(function HYRecommend() {
+export default memo(function LDRecommend() {
   return (
     <RecommendWraper>
-      <HYTopBanner/>
+      <LDTopBanner/>
       <Content className="wrap-v2">
         <RecommendLeft>
-          <HYHotRecommend />
-          <HYNewAlbum />
-          <HYRankingList />
+          <LDHotRecommend />
+          <LDNewAlbum />
+          <LDRankingList />
         </RecommendLeft>
         <RecommendRight>
-          <HYUserLogin />
-          <HYSettleSinger />
-          <HYHotRadio />
+          <LDUserLogin />
+          <LDSettleSinger />
+          <LDHotRadio />
         </RecommendRight>
       </Content>
     </RecommendWraper>

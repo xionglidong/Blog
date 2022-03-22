@@ -16,7 +16,7 @@ import {
 
 const PAGE_SIZE = 16;
 
-export default memo(function HYRadioCategory() {
+export default memo(function LDRadioCategory() {
   // redux
   const dispatch = useDispatch();
   const { categories, currentId } = useSelector(state => ({

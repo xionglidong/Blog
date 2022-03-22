@@ -3,14 +3,14 @@ import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 
 import { getTopAlbumsAction } from '../../store/actionCreators';
 
-import HYThemeHeaderNormal from "@/components/theme-header-normal";
-import HYAlbumCover from "@/components/album-cover";
-import HYPagination from '@/components/pagination';
+import LDThemeHeaderNormal from "@/components/theme-header-normal";
+import LDAlbumCover from "@/components/album-cover";
+import LDPagination from '@/components/pagination';
 import {
   TopAlbumWrapper
 } from './style';
 
-export default memo(function HYTopAlbum() {
+export default memo(function LDTopAlbum() {
   const [currentPage, setCurrentPage] = useState(1);
 
   const { topAlbums, total } = useSelector(state => ({
@@ -31,11 +31,11 @@ export default memo(function HYTopAlbum() {
 
   return (
     <TopAlbumWrapper>
-      <HYThemeHeaderNormal title="全部新碟" />
+      <LDThemeHeaderNormal title="全部新碟" />
       <div className="album-list">
         {
           topAlbums.map((item, index) => {
-            return <HYAlbumCover size={"130px"} 
+            return <LDAlbumCover size={"130px"} 
                                  width={"153px"} 
                                  bgp={"-845px"}
                                  key={item.id} 
@@ -43,7 +43,7 @@ export default memo(function HYTopAlbum() {
           })
         }
       </div>
-      <HYPagination currentPage={currentPage} 
+      <LDPagination currentPage={currentPage} 
                     total={total} 
                     pageSize={30}
                     onPageChange={onPageChange}/>

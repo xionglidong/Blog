@@ -1,16 +1,16 @@
 import React, { memo } from 'react';
 
-import HYHotAlbum from './c-cpns/hot-album';
-import HYTopAlbum from './c-cpns/top-album';
+import LDHotAlbum from './c-cpns/hot-album';
+import LDTopAlbum from './c-cpns/top-album';
 import {
   AblumWrapper
 } from './style';
 
-export default memo(function HYAlbum() {
+export default memo(function LDAlbum() {
   return (
     <AblumWrapper className="wrap-v2">
-      <HYHotAlbum/>
-      <HYTopAlbum/>
+      <LDHotAlbum/>
+      <LDTopAlbum/>
     </AblumWrapper>
   )
 })

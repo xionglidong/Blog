@@ -1,14 +1,14 @@
 import React, { useState, memo } from 'react';
 import { useSelector, shallowEqual } from 'react-redux';
 
-import HYSongsCategory from '../songs-category'
+import LDSongsCategory from '../songs-category'
 import {
   HeaderWrapper,
   HeaderLeft,
   HeaderRight
 } from "./style";
 
-export default memo(function HYSongsHeader() {
+export default memo(function LDSongsHeader() {
   // hooks
   const [showCategory, setShowCategory] = useState(false);
 
@@ -25,7 +25,7 @@ export default memo(function HYSongsHeader() {
           <span>选择分类</span>
           <i className="sprite_icon2"></i>
         </button>
-        {showCategory ? <HYSongsCategory /> : null}
+        {showCategory ? <LDSongsCategory /> : null}
       </HeaderLeft>
       <HeaderRight>
         <button className="hot">热门</button>

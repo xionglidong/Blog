@@ -9,7 +9,7 @@ import {
   AlphaListWrapper
 } from './style';
 
-export default memo(function HYAlphaList() {
+export default memo(function LDAlphaList() {
   const [currentAlpha, setCurrentAlpha] = useState("-1");
 
   const { currentType, currentArea } = useSelector(state => ({

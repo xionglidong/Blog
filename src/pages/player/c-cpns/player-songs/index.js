@@ -3,11 +3,11 @@ import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 
 import { getSizeImage } from '@/utils/format-utils';
 
-import HYThemeHeaderPlayer from '@/components/theme-header-player';
+import LDThemeHeaderPlayer from '@/components/theme-header-player';
 import { PlayerSongsWrapper } from './style';
 import { getSimiPlaylistAction } from '../../store/actionCreators';
 
-export default memo(function HYPlayerSongs() {
+export default memo(function LDPlayerSongs() {
 
   // redux hooks
   const { simiPlaylist } = useSelector(state => ({
@@ -22,7 +22,7 @@ export default memo(function HYPlayerSongs() {
 
   return (
     <PlayerSongsWrapper>
-      <HYThemeHeaderPlayer title="包含这首歌的歌单" />
+      <LDThemeHeaderPlayer title="包含这首歌的歌单" />
       <div className="songs">
         {
           simiPlaylist.map((item, index) => {
