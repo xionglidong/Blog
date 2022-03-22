@@ -104,7 +104,7 @@
 clone项目：
 
 ```
-git clone https://github.com/coderwhy/hy-react-web-music.git
+git clone https://github.com/xionglidong/blog.git
 ```
 
 安装项目依赖：
