@@ -13,6 +13,18 @@ import {
   HeaderRight
 } from "./style";
 
+
+
+import { Layout, Menu, Breadcrumb } from 'antd';
+import {
+  DesktopOutlined,
+  PieChartOutlined,
+  FileOutlined,
+  TeamOutlined,
+  UserOutlined,
+} from '@ant-design/icons';
+const { Header, Content, Footer, Sider } = Layout;
+
 export default memo(function LDAppHeader() {
 
   const showItem = (item, index) => {
@@ -29,8 +41,23 @@ export default memo(function LDAppHeader() {
   }
 
   return (
-    <AppHeaderWrapper>
-      <div className="wrap-v1 content">
+    // <AppHeaderWrapper>
+      <Layout className="site-layout">
+          <Header className="site-layout-background" style={{ padding: 0 }} />
+          <Content style={{ margin: '0 16px' }}>
+            <Breadcrumb style={{ margin: '16px 0' }}>
+              <Breadcrumb.Item>User</Breadcrumb.Item>
+              <Breadcrumb.Item>Bill</Breadcrumb.Item>
+            </Breadcrumb>
+            <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
+              Bill is a cat.
+            </div>
+          </Content>
+          <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+        </Layout>
+    // </AppHeaderWrapper>
+    
+      /* <div className="wrap-v1 content">
         <HeaderLeft>
           <a className="logo sprite_01" href="#/">网易云音乐</a>
           <div className="select-list">
@@ -48,10 +75,10 @@ export default memo(function LDAppHeader() {
         <HeaderRight>
           <Input className="search" placeholder="音乐/视频/电台/用户" prefix={<SearchOutlined />} />
           <div className="center">创作者中心</div>
-          {/* <div className="">登录</div> */}
+          <div className="">登录</div>
         </HeaderRight>
       </div>
-      <div className="divider"></div>
-    </AppHeaderWrapper>
+      <div className="divider"></div> */
+    
   )
 })
