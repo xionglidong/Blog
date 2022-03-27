@@ -22,6 +22,8 @@ const LDArtist = React.lazy(_ => import("../pages/discover/c-pages/artist"));
 const LDAlbum = React.lazy(_ => import("../pages/discover/c-pages/album"));
 const LDPlayer = React.lazy(_ => import("../pages/player"));
 
+const LDReact = React.lazy(_ => import("../pages/react"));
+
 
 const LDFriend = React.lazy(_ => import("../pages/friend"));
 const LDMine = React.lazy(_ => import("../pages/mine"));
@@ -32,7 +34,7 @@ export default [
     path: "/",
     exact: true,
     render: () => (
-      <Redirect to="/discover"/>
+      <Redirect to="/react"/>
     )
   },
   {
@@ -76,6 +78,10 @@ export default [
         component: LDPlayer
       }
     ]
+  },
+  {
+    path: "/react",
+    component: LDReact
   },
   {
     path: "/friend",

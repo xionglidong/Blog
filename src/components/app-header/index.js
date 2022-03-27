@@ -1,44 +1,46 @@
 import React, { memo } from 'react';
-import { NavLink } from "react-router-dom";
-import classnames from "classnames";
+// import { NavLink } from "react-router-dom";
+// import classnames from "classnames";
 
-import { headerLinks } from "@/services/local-data";
+// import { headerLinks } from "@/services/local-data";
 
-import { Input } from "antd";
-import { SearchOutlined } from '@ant-design/icons';
+// import { Input } from "antd";
+// import { SearchOutlined } from '@ant-design/icons';
 
 import {
-  AppHeaderWrapper,
-  HeaderLeft,
-  HeaderRight
+  // AppHeaderWrapper,
+  // HeaderLeft,
+  // HeaderRight
 } from "./style";
 
 
 
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Breadcrumb } from 'antd';
+// import { Layout, Menu, Breadcrumb } from 'antd';
 import {
-  DesktopOutlined,
-  PieChartOutlined,
-  FileOutlined,
-  TeamOutlined,
-  UserOutlined,
+  // DesktopOutlined,
+  // PieChartOutlined,
+  // FileOutlined,
+  // TeamOutlined,
+  // UserOutlined,
 } from '@ant-design/icons';
-const { Header, Content, Footer, Sider } = Layout;
+const { Header, Content, Footer } = Layout;
+// const { Header, Content, Footer, Sider } = Layout;
 
 export default memo(function LDAppHeader() {
 
-  const showItem = (item, index) => {
-    if (index < 3) {
-      return (
-        <NavLink to={item.link}>
-          {item.title}
-          <i className="sprite_01 icon"></i>
-        </NavLink>
-      )
-    } else {
-      return <a href={item.link} target="_blank" rel="noopener noreferrer">{item.title}</a>
-    }
-  }
+  // const showItem = (item, index) => {
+  //   if (index < 3) {
+  //     return (
+  //       <NavLink to={item.link}>
+  //         {item.title}
+  //         <i className="sprite_01 icon"></i>
+  //       </NavLink>
+  //     )
+  //   } else {
+  //     return <a href={item.link} target="_blank" rel="noopener noreferrer">{item.title}</a>
+  //   }
+  // }
 
   return (
     // <AppHeaderWrapper>

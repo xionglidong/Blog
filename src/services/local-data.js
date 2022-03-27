@@ -1,3 +1,45 @@
+import React from 'react';
+
+import {
+  DesktopOutlined,
+  PieChartOutlined,
+  FileOutlined,
+  TeamOutlined,
+  UserOutlined,
+} from '@ant-design/icons';
+
+export const siderLinks = [
+  // {
+  //   title: "HTML",
+  //   link: "/discover",
+  //   icon:<DesktopOutlined />
+  // },
+  // {
+  //   title: "CSS",
+  //   link: "/mine",
+  //   icon:<PieChartOutlined />
+  // },
+  // {
+  //   title: "JavaScript",
+  //   link: "/friend",
+  //   icon:<FileOutlined />
+  // },
+  // {
+  //   title: "Vue",
+  //   link: "/friend",
+  //   icon:<TeamOutlined />
+  // },
+  {
+    title: "React",
+    link: "/react",
+    icon:<UserOutlined />
+  },
+  // {
+  //   title: "Node.js",
+  //   link: "/friend",
+  //   icon:<UserOutlined />
+  // }
+]
 export const headerLinks = [
   {
     title: "发现音乐",
