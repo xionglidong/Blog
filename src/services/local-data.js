@@ -1,10 +1,10 @@
 import React from 'react';
 
 import {
-  DesktopOutlined,
-  PieChartOutlined,
-  FileOutlined,
-  TeamOutlined,
+  // DesktopOutlined,
+  // PieChartOutlined,
+  // FileOutlined,
+  // TeamOutlined,
   UserOutlined,
 } from '@ant-design/icons';
 

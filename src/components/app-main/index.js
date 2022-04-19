@@ -7,15 +7,17 @@ import routes from "@/router"
 
 // import { headerLinks } from "@/services/local-data";
 
-import { Layout, Menu } from 'antd';
+import { Layout } from 'antd';
+// import { Layout, Menu } from 'antd';
 // import { Layout, Menu, Breadcrumb } from 'antd';
-import {
-  DesktopOutlined,
-  PieChartOutlined,
-  FileOutlined,
-  TeamOutlined,
-  UserOutlined,
-} from '@ant-design/icons';
+
+// import {
+//   DesktopOutlined,
+//   PieChartOutlined,
+//   FileOutlined,
+//   TeamOutlined,
+//   UserOutlined,
+// } from '@ant-design/icons';
 
 
 
@@ -30,15 +32,20 @@ import {
 } from "./style";
 
 
-const { Header, Content, Footer, Sider } = Layout;
-const { SubMenu } = Menu;
+const { Header, Content, Footer } = Layout;
+// const { Header, Content, Footer, Sider } = Layout;
+
+// const { SubMenu } = Menu;
 
 
-let collapsed =false
-function onCollapse(collapsed){
-  console.log(collapsed);
+// let collapsed =false
+
+// function onCollapse(collapsed){
+  // console.log(collapsed);
     // this.setState({ collapsed });
-}
+// }
+
+
 export default memo(function LDAppHeader() {
 
   // const showItem = (item, index) => {
