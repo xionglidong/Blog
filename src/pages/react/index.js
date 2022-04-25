@@ -5,10 +5,8 @@ import { MineWrapper } from './style';
 export default memo(function LDMine() {
   return (
     <MineWrapper>
-      <div className="content wrap-v2">
-        <div className="pic">
-          <a className="login" href="/#">立即登录</a>
-        </div>
+      <div className="content">
+       <h2>{'sjdiolasjdioj'}</h2> 
       </div>
     </MineWrapper>
   )

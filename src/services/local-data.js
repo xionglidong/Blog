@@ -1,11 +1,11 @@
-import React from 'react';
+// import React from 'react';
 
 import {
   // DesktopOutlined,
   // PieChartOutlined,
   // FileOutlined,
   // TeamOutlined,
-  UserOutlined,
+  // UserOutlined,
 } from '@ant-design/icons';
 
 export const siderLinks = [
@@ -24,16 +24,21 @@ export const siderLinks = [
   //   link: "/friend",
   //   icon:<FileOutlined />
   // },
-  // {
-  //   title: "Vue",
-  //   link: "/friend",
-  //   icon:<TeamOutlined />
-  // },
   {
-    title: "React",
-    link: "/react",
-    icon:<UserOutlined />
+    title: "JavaScript",
+    link: "/JavaScript",
+    icon:require("@/assets/img/JavaScript.png")
   },
+  {
+    title: "Vue",
+    link: "/Vue",
+    icon:require("@/assets/img/Vue.png")
+  },
+  // {
+  //   title: "React",
+  //   link: "/react",
+  //   icon:<UserOutlined />
+  // },
   // {
   //   title: "Node.js",
   //   link: "/friend",

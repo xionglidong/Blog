@@ -1,32 +1,34 @@
 import React from 'react';
 import { Redirect } from "react-router-dom";
 
-// import LDDiscover from "../pages/discover";
-// import LDRecommend from "../pages/discover/c-pages/recommend";
-// import LDRanking from "../pages/discover/c-pages/ranking";
-// import LDSongs from "../pages/discover/c-pages/songs";
-// import LDDjradio from "../pages/discover/c-pages/djradio";
-// import LDArtist from "../pages/discover/c-pages/artist";
-// import LDAlbum from "../pages/discover/c-pages/album";
-// import LDPlayer from "../pages/player";
+// import Discover from "../pages/discover";
+// import Recommend from "../pages/discover/c-pages/recommend";
+// import Ranking from "../pages/discover/c-pages/ranking";
+// import Songs from "../pages/discover/c-pages/songs";
+// import Djradio from "../pages/discover/c-pages/djradio";
+// import Artist from "../pages/discover/c-pages/artist";
+// import Album from "../pages/discover/c-pages/album";
+// import Player from "../pages/player";
 
-// import LDFriend from "../pages/friend";
-// import LDMine from "../pages/mine";
+// import Friend from "../pages/friend";
+// import Mine from "../pages/mine";
 
-const LDDiscover = React.lazy(_ => import("../pages/discover"));
-const LDRecommend = React.lazy(_ => import("../pages/discover/c-pages/recommend"));
-const LDRanking = React.lazy(_ => import("../pages/discover/c-pages/ranking"));
-const LDSongs = React.lazy(_ => import("../pages/discover/c-pages/songs"));
-const LDDjradio = React.lazy(_ => import("../pages/discover/c-pages/djradio"));
-const LDArtist = React.lazy(_ => import("../pages/discover/c-pages/artist"));
-const LDAlbum = React.lazy(_ => import("../pages/discover/c-pages/album"));
-const LDPlayer = React.lazy(_ => import("../pages/player"));
+const Discover = React.lazy(_ => import("../pages/discover"));
+const Recommend = React.lazy(_ => import("../pages/discover/c-pages/recommend"));
+const Ranking = React.lazy(_ => import("../pages/discover/c-pages/ranking"));
+const Songs = React.lazy(_ => import("../pages/discover/c-pages/songs"));
+const Djradio = React.lazy(_ => import("../pages/discover/c-pages/djradio"));
+const Artist = React.lazy(_ => import("../pages/discover/c-pages/artist"));
+const Album = React.lazy(_ => import("../pages/discover/c-pages/album"));
+const Player = React.lazy(_ => import("../pages/player"));
 
-const LDReact = React.lazy(_ => import("../pages/react"));
+// const React = React.lazy(_ => import("../pages/react"));
+const JavaScript = React.lazy(_ => import("../pages/JavaScript"));
+const Vue = React.lazy(_ => import("../pages/Vue"));
 
 
-const LDFriend = React.lazy(_ => import("../pages/friend"));
-const LDMine = React.lazy(_ => import("../pages/mine"));
+const Friend = React.lazy(_ => import("../pages/friend"));
+const Mine = React.lazy(_ => import("../pages/mine"));
 
 
 export default [
@@ -34,12 +36,12 @@ export default [
     path: "/",
     exact: true,
     render: () => (
-      <Redirect to="/react"/>
+      <Redirect to="/JavaScript"/>
     )
   },
   {
     path: "/discover",
-    component: LDDiscover,
+    component: Discover,
     routes: [
       {
         path: "/discover",
@@ -50,45 +52,53 @@ export default [
       },
       {
         path: "/discover/recommend",
-        component: LDRecommend
+        component: Recommend
       },
       {
         path: "/discover/ranking",
-        component: LDRanking
+        component: Ranking
       },
       {
         path: "/discover/songs",
-        component: LDSongs
+        component: Songs
       },
       {
         path: "/discover/djradio",
         exact: true,
-        component: LDDjradio
+        component: Djradio
       },
       {
         path: "/discover/artist",
-        component: LDArtist
+        component: Artist
       },
       {
         path: "/discover/album",
-        component: LDAlbum
+        component: Album
       },
       {
         path: "/discover/player",
-        component: LDPlayer
+        component: Player
       }
     ]
   },
   {
+    path: "/JavaScript",
+    component: JavaScript
+  },
+  {
     path: "/react",
-    component: LDReact
+    component: React
+  },
+  {
+    path: "/Vue",
+    component: Vue
   },
   {
     path: "/friend",
-    component: LDFriend
+    component: Friend
   },
   {
     path: "/mine",
-    component: LDMine
+    component: Mine
   }
 ]

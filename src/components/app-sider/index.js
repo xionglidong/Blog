@@ -1,4 +1,5 @@
-import React, { memo,useState } from 'react';
+import React, { memo } from 'react';
+// import React, { memo,useState } from 'react';
 import { NavLink } from "react-router-dom";
 // import classnames from "classnames";
 
@@ -7,7 +8,7 @@ import { siderLinks } from "@/services/local-data";
 import { Layout, Menu } from 'antd';
 // import { Layout, Menu, Breadcrumb } from 'antd';
 
-
+import { useLocation } from 'react-router'
 
 
 // import { Input } from "antd";
@@ -20,7 +21,6 @@ import {
   // HeaderRight
 } from "./style";
 
-
 const { Sider } = Layout;
 // const { Header, Content, Footer, Sider } = Layout;
 // const { SubMenu } = Menu;
@@ -28,27 +28,28 @@ const { Sider } = Layout;
 
 
 export default memo(function LDAppHeader() {
+  const pathname = useLocation().pathname
   // hooks
-  const [collapsed, setCollapsed] = useState(false);
-  function onCollapse(collapsed){
-    setCollapsed(collapsed)
-  }
    const showItem = (item, index) => {
       return (
-        <NavLink to={item.link}>
+        <NavLink style={{textDecoration:'none'}} to={item.link}>
           {item.title}
         </NavLink>
       )
   }
   return (
     <AppSiderWrapper>
-        <Sider className="sider" collapsible collapsed={collapsed} onCollapse={onCollapse}>
-            <div className="logo" />
-            <Menu defaultSelectedKeys={['1']} mode="inline">
+        <Sider className="sider">
+            <div className="logoInner">
+              <img alt="" style={{width:50}} className="logo" src={require("@/assets/img/logo.png")} />
+              <p className="logoText">CoderXLD</p>
+            </div>
+            <Menu defaultSelectedKeys={[pathname]} mode="inline">
               {
                 siderLinks.map((item, index) => {
                   return (
-                    <Menu.Item key={index} icon={item.icon}>
+                    <Menu.Item key={item.link}>
+                      <img alt="" className="icon" src={item.icon} />
                       {showItem(item, index)}
                     </Menu.Item>
                   )

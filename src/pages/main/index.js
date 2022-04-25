@@ -7,18 +7,18 @@ import { Layout } from 'antd';
 
 // import routes from "@/router"
 
-import LDAppSider from '@/components/app-sider';
-import LDAppMain from '@/components/app-main';
+import AppSider from '@/components/app-sider';
+import AppMain from '@/components/app-main';
 // import LDAppHeader from '@/components/app-header';
 // import LDAppFooter from '@/components/app-footer';
 // import LDAppPlayBar from '@/pages/player/app-play-bar';
 
-export default memo(function LDMain() {
+export default memo(function Main() {
   return (
     <HashRouter>
-      <Layout>
-        <LDAppSider />
-        <LDAppMain />
+      <Layout style={{minHeight: '100vh',display:'flex'}}>
+        <AppSider />
+        <AppMain />
         {/* <LDAppHeader /> */}
         {/* <Suspense fallback={<div>loading</div>}> */}
           {/* {renderRoutes(routes)} */}

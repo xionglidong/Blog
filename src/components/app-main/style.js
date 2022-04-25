@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
-export const AppSiderWrapper = styled.div`
-  minHeight: '100vh';
-  background-color: #242424;
-  font-size: 14px;
+export const MainContainer = styled.div`
+  maxHeight: '100vh';
+  background-color:'white';
+  flex:1;
+  h1,h2,h3,h4{
+    font-weight:bold;
+  }
 `
 
 export const AppHeaderWrapper = styled.div`

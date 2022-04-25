@@ -25,14 +25,14 @@ import { Layout } from 'antd';
 // import { SearchOutlined } from '@ant-design/icons';
 
 import {
-  // AppSiderWrapper
+  MainContainer
   // AppHeaderWrapper,
   // HeaderLeft,
   // HeaderRight
 } from "./style";
 
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content } = Layout;
 // const { Header, Content, Footer, Sider } = Layout;
 
 // const { SubMenu } = Menu;
@@ -46,7 +46,7 @@ const { Header, Content, Footer } = Layout;
 // }
 
 
-export default memo(function LDAppHeader() {
+export default memo(function AppMain() {
 
   // const showItem = (item, index) => {
   //   if (index < 3) {
@@ -73,19 +73,19 @@ export default memo(function LDAppHeader() {
   //         </div>
   
   return (
-    // <AppSiderWrapper>
-    <Layout>
-      <Header className="site-layout-sub-header-background" style={{ padding: 0 }} />
-      <Content style={{ margin: '24px 16px 0' }}>
-        {/* <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-          content
-        </div> */}
-        <Suspense fallback={<div>loading</div>}>
-          {renderRoutes(routes)}
-         </Suspense>
-      </Content>
-      <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
-    </Layout>
-    /* </AppSiderWrapper> */
+    <MainContainer>
+      <Layout style={{height: '100vh',display:'flex',flexDirection:'column'}}>
+        <Header className="" style={{ borderBottom:'1px solid #f0f2f5',backgroundColor:"white" }} />
+        <Content style={{flex:1,backgroundColor:'white',padding:'40px 64px 40px 64px',overflowY:'scroll' }}>
+          {/* <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
+            content
+          </div> */}
+          <Suspense fallback={<div>loading</div>}>
+            {renderRoutes(routes)}
+          </Suspense>
+        </Content>
+        {/* <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer> */}
+      </Layout>
+    </MainContainer>
   )
 })
