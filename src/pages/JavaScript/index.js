@@ -1,10 +1,20 @@
 import React, { memo } from 'react';
-
+import 'highlight.js/styles/atom-one-dark.css';
+// import 'highlight.js/styles/base16/dracula.css';
+// import 'highlight.js/styles/vs2015.css'
 import { Container } from './style';
-
-export default memo(function Vue() {
+import {Debounce,Throttle} from './hljs'
+export default memo(function JavaScript() {
+ 
   return (
     <Container>
+
+      <h1>{'防抖函数'}</h1>
+      <Debounce/>
+
+      <h1>{'节流函数'}</h1>
+      <Throttle/>
+
       <h1>{'事件冒泡'}</h1>
       <p>{'javascript的事件传播过程中，当事件在一个元素上出发之后，事件会逐级传播给先辈元素，直到document为止，有的浏览器可能到window为止，这就是事件冒泡现象。'}</p>
 
