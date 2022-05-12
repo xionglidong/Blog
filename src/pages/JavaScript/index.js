@@ -1,7 +1,4 @@
 import React, { memo } from 'react';
-import 'highlight.js/styles/atom-one-dark.css';
-// import 'highlight.js/styles/base16/dracula.css';
-// import 'highlight.js/styles/vs2015.css'
 import { Container } from './style';
 import {Debounce,Throttle} from './hljs'
 export default memo(function JavaScript() {
@@ -10,9 +7,23 @@ export default memo(function JavaScript() {
     <Container>
 
       <h1>{'防抖函数'}</h1>
+      <p>{'当事件触发时，响应的函数并不会立即触发，而是等待规定时间内没有事件触发后才执行响应函数'}</p>
+      <ul>
+        <li>{'输入框搜索联想'}</li>
+        <li>{'频繁的点击按钮'}</li>
+        <li>{'监听滚动事件'}</li>
+        <li>{'缩放浏览器的resize事件'}</li>
+      </ul>
       <Debounce/>
 
       <h1>{'节流函数'}</h1>
+      <p>{'在规定时间内只会触发一次事件'}</p>
+      <ul>
+        <li>{'监听页面的滚动'}</li>
+        <li>{'鼠标移动事件'}</li>
+        <li>{'频繁点击按钮'}</li>
+       
+      </ul>
       <Throttle/>
 
       <h1>{'事件冒泡'}</h1>

@@ -34,6 +34,11 @@ export const siderLinks = [
     link: "/Vue",
     icon:require("@/assets/img/Vue.png")
   },
+  {
+    title: "Node",
+    link: "/Node",
+    icon:require("@/assets/img/Node.png")
+  },
   // {
   //   title: "React",
   //   link: "/react",

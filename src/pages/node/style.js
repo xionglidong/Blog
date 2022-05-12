@@ -1,25 +1,22 @@
 import styled from 'styled-components';
 
-export const MineWrapper = styled.div`
-  .content {
-    background-color: #fff;
-    min-height: 700px;
-
-    .pic {
-      position: relative;
-      width: 807px;
-      height: 372px;
-      margin: 0 auto;
-      background: url(${require("@/assets/img/mine_sprite.png")}) 0 104px no-repeat;
-
-      .login {
-        position: absolute;
-        width: 167px;
-        height: 45px;
-        left: 482px;
-        top: 302px;
-        text-indent: -9999px;
-      }
-    }
+export const Container = styled.div`
+li{
+  margin-left:15px;
+  list-style-type: circle;
+}
+span{
+  font-size:14px;
+}
+p,ul{
+  margin:10px 0;
+  font-size:14px;
+}
+h1+p,h1+ul{
+    margin:20px 0;
+    font-size:14px;
   }
+h1{
+  margin-bottom:20px;
+}
 `

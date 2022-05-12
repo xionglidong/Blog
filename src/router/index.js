@@ -25,6 +25,7 @@ const Player = React.lazy(_ => import("../pages/player"));
 // const React = React.lazy(_ => import("../pages/react"));
 const JavaScript = React.lazy(_ => import("../pages/JavaScript"));
 const Vue = React.lazy(_ => import("../pages/Vue"));
+const Node = React.lazy(_ => import("../pages/Node"));
 
 
 const Friend = React.lazy(_ => import("../pages/friend"));
@@ -88,6 +89,10 @@ export default [
   {
     path: "/react",
     component: React
+  },
+  {
+    path: "/Node",
+    component: Node
   },
   {
     path: "/Vue",
