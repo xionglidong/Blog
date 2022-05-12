@@ -24,7 +24,7 @@ const Player = React.lazy(_ => import("../pages/player"));
 
 // const React = React.lazy(_ => import("../pages/react"));
 const JavaScript = React.lazy(_ => import("../pages/JavaScript"));
-const Vue = React.lazy(_ => import("../pages/vue"));
+const Vue = React.lazy(_ => import("../pages/Vue"));
 const Node = React.lazy(_ => import("../pages/node"));
 
 
