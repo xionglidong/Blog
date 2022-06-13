@@ -26,6 +26,7 @@ const Player = React.lazy(_ => import("../pages/player"));
 const JavaScript = React.lazy(_ => import("../pages/JavaScript"));
 const Vue = React.lazy(_ => import("../pages/Vue"));
 const Node = React.lazy(_ => import("../pages/node"));
+const MySQL = React.lazy(_ => import("../pages/MySQL"));
 
 
 const Friend = React.lazy(_ => import("../pages/friend"));
@@ -97,6 +98,10 @@ export default [
   {
     path: "/Vue",
     component: Vue
+  },
+  {
+    path: "/MySQL",
+    component: MySQL
   },
   {
     path: "/friend",

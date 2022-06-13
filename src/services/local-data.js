@@ -39,6 +39,11 @@ export const siderLinks = [
     link: "/Node",
     icon:require("@/assets/img/Node.png")
   },
+  {
+    title: "MySQL",
+    link: "/MySQL",
+    icon:require("@/assets/img/DataBase.png")
+  },
   // {
   //   title: "React",
   //   link: "/react",
